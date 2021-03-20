@@ -1,0 +1,124 @@
+
+header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ?.header-cont > .header-auth__list {
+  margin-left: auto;
+} */
+
+/* *main-nav ====================================*/
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* *header--navigation__list =====================================*/
+.header-navigation__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-navigation__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.link {
+  position: relative;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--txt-c-grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  transition: color var(--transiton-time) var(--cubic);
+
+  &:hover,
+  &:focus{
+    color: var(--txt-c-accent);
+    transition: color var(--transiton-time) var(--cubic);
+  }
+
+}
+
+.link.current {
+  color: var(--txt-c-accent);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--txt-c-accent);
+  }
+}
+
+
+.header-auth__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-auth__item {
+  display: flex;
+  margin: 0;
+
+  /* align-items: center; */
+}
+
+.header-auth__list .link {
+  color: var(--txt-c-grey-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  white-space: nowrap;
+
+  transition: color var(--transiton-time) var(--cubic);
+
+  &:hover,
+  &:focus{
+    color: var(--txt-c-accent);
+    transition: color var(--transiton-time) var(--cubic);
+  }
+}
+
+.mail-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header-auth__list .header-auth__item + .header-auth__item {
+  margin-left: 50px;
+  margin-bottom: 0;
+
+  /* padding: 32px 0px; */
+}
+
+

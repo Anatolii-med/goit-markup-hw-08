@@ -1,0 +1,54 @@
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  
+  &__item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    
+    text-align: left;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  &__content {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: var(--txt-c-grey-light);
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.advantage__icon-wrap {
+  display: flex;
+  background-color: var(--bgc-dark);
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+

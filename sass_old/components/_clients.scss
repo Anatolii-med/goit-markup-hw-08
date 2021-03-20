@@ -1,0 +1,36 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list__link {
+  display: flex;
+  color: var(--social-color);
+  border: 1px solid var(--social-color);
+
+  width: 170px;
+  height: 90px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+
+  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+  
+  &:hover,
+  &:focus {
+    color: var(--txt-c-accent);
+    border: 1px solid var(--txt-c-accent);
+  
+    transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+  }
+}
+
+.clients-list__logo {
+  fill: currentColor;
+}
