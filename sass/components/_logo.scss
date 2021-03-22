@@ -1,0 +1,30 @@
+
+.logo {
+  font-family: "Raleway", Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 1.174;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $txt-c-accent;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.studio {
+  font-family: "Raleway", Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  color: $txt-c-dark;
+
+  &--footer {
+    color: #fff;
+  }
+}

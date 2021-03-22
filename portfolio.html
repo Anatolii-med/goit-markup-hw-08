@@ -24,14 +24,14 @@
       <nav class="header-navigation">
         <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
         <ul class="header-navigation__list list">
-          <li class="header-navigation__item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="header-navigation__item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+          <li class="header-navigation__item"><a href="./index.html" class="link current">Студия</a></li>
+          <li class="header-navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="header-navigation__item"><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="header-auth__list list">
-        <li class="header-auth__item">
-          <a href="mailto:info@devstudio.com" class="link">
+        <li class="header-auth__item-mail">
+          <a href="mailto:info@devstudio.com" class="link header-auth__mail">
             <svg class="mail-icon">
               <use href="./img/icons.svg#icon-envelope-hover">
               </use>
@@ -39,8 +39,8 @@
             info@devstudio.com
           </a>
         </li>
-        <li class="header-auth__item">
-          <a href="tel:+380961111111" class="link">
+        <li class="header-auth__item-phone">
+          <a href="tel:+380961111111" class="link header-auth__phone">
             <svg class="phone-icon">
               <use href="./img/icons.svg#icon-smartphone">
               </use>
@@ -49,6 +49,11 @@
           </a>
         </li>
       </ul>
+      <button type="button" class="header__mobile-menu">
+        <svg class="mobile-menu">
+          <use href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 

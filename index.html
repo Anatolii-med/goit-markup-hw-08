@@ -28,8 +28,8 @@
         </ul>
       </nav>
       <ul class="header-auth__list list">
-        <li class="header-auth__item">
-          <a href="mailto:info@devstudio.com" class="link">
+        <li class="header-auth__item-mail">
+          <a href="mailto:info@devstudio.com" class="link header-auth__mail">
             <svg class="mail-icon">
               <use href="./img/icons.svg#icon-envelope-hover">
               </use>
@@ -37,8 +37,8 @@
             info@devstudio.com
           </a>
         </li>
-        <li class="header-auth__item">
-          <a href="tel:+380961111111" class="link">
+        <li class="header-auth__item-phone">
+          <a href="tel:+380961111111" class="link header-auth__phone">
             <svg class="phone-icon">
               <use href="./img/icons.svg#icon-smartphone">
               </use>
@@ -47,6 +47,11 @@
           </a>
         </li>
       </ul>
+      <button type="button" class="header__mobile-menu">
+        <svg class="mobile-menu">
+          <use href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -121,19 +126,19 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work-list__item">
-            <img src="./img/img1.jpg" alt="Программирование" width="370" class="photo">
+            <img src="./img/img11.jpg" alt="Программирование" class="photo">
             <div class="work-list__descrip">
               <p class="work-list__title">Десктопные приложения</p>
             </div>
           </li>
           <li class="work-list__item">
-            <img src="./img/img2.jpg" alt="Создание макета" width="370" class="photo">
+            <img src="./img/img21.jpg" alt="Создание макета" class="photo">
             <div class="work-list__descrip">
               <p class="work-list__title">Мобильные приложения </p>
             </div>
           </li>
           <li class="work-list__item">
-            <img src="./img/img3.jpg" alt="Подбор цвета" width="370" class="photo">
+            <img src="./img/img31.jpg" alt="Подбор цвета" class="photo">
             <div class="work-list__descrip">
               <p class="work-list__title">Дизайнерские решения</p>
             </div>
@@ -150,7 +155,7 @@
         <ul class="team-list list">
 
           <li class="team-list__item">
-            <img src="./img/img4.jpg" alt="Фото: Игорь Демьяненко" width="270" class="photo">
+            <img src="./img/img41.jpg" alt="Фото: Игорь Демьяненко" width="270" class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Игорь Демьяненко</h3>
               <p class="team-list__content">Product Designer</p>
@@ -189,7 +194,7 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img5.jpg" alt="Фото: Ольга Репина" width="270" class="photo">
+            <img src="./img/img51.jpg" alt="Фото: Ольга Репина" width="270" class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Ольга Репина</h3>
               <p class="team-list__content">Frontend Developer</p>
@@ -228,7 +233,7 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img6.jpg" alt="Фото: Николай Тарасов" width="270" class="photo">
+            <img src="./img/img61.jpg" alt="Фото: Николай Тарасов" width="270" class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Николай Тарасов</h3>
               <p class="team-list__content">Marketing</p>
@@ -267,7 +272,7 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img7.jpg" alt="Фото: Михаил Ермаков" width="270" class="photo">
+            <img src="./img/img71.jpg" alt="Фото: Михаил Ермаков" width="270" class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Михаил Ермаков</h3>
               <p class="team-list__content">UI Designer</p>
@@ -425,8 +430,8 @@
           <input type="email" placeholder="E-mail" class="footer__subscribe-input">
           <button type="submit" class="button subscribe__btn">
             Подписаться
-            <svg class="footer__subscribe-icon">
-              <use href="./img/icons.svg#icon-telegram"></use>
+            <svg class="footer__subscribe-icon" width="40px">
+              <use href="./img/icons.svg#icon-telegram1"></use>
             </svg>
           </button>
         </form>
