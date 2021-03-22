@@ -1,0 +1,28 @@
+:root {
+
+  /* background */
+  --bgc-main: #ffffff;
+  --bgc-dark: #f5f4fa;
+  --bgc-light: #e5e5e5;
+  --bgc-accent: #2196f3;
+  --bgc-hero-footer: #2f303a;
+  --overlay: rgba(33, 150, 243, 0.9);
+  --border-color: #ececec;
+  --btn-boxshadow-color: rgba(0, 0, 0, 0.15);
+  --hero-gradient: rgba(47, 48, 58, 0.4);
+
+  /* text */
+  --txt-c-dark: #000000;
+  --txt-c-grey: #212121;
+  --txt-c-grey-light: #757575;
+  --txt-c-accent: #2196f3;
+  --txt-c-address: rgba(255, 255, 255, 0.6);
+  --txt-c-light: #ffffff;
+  --card-set-gap: 30px;
+  --social-color: #afb1b8;
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --backdrop-op02: rgba(0, 0, 0, 0.2);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --transparent-items: rgba(47, 48, 58, 0.8);
+  --transiton-time: 250ms;
+}
