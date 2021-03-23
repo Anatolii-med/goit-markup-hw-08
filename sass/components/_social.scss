@@ -1,0 +1,53 @@
+.social-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.team-list__social-link {
+  display: flex;
+
+  color: $social-color;
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.team-list__social {
+  display: flex;
+  justify-content: center;
+  
+  & .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social {
+  &__list {
+    display: flex;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+
+  color: $txt-c-light;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+  
+}

@@ -7,7 +7,12 @@ body {
 
 a {
   text-decoration: none;
+}
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -26,9 +31,14 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  color: var(--txt-c-grey);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $txt-c-grey;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .no-top-padding {

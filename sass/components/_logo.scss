@@ -13,6 +13,10 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {   
+    font-size: 26px;
+  }
 }
 
 .studio {
@@ -26,5 +30,8 @@
 
   &--footer {
     color: #fff;
+  }
+  @media screen and (min-width: 1200px) {   
+    font-size: 26px;
   }
 }
