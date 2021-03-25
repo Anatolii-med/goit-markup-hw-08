@@ -154,13 +154,19 @@
     </section>
 
     <!-- !Наша команда -->
-    <section class="section team-list__container">
-      <div class="container">
+    <section class="section team-section">
+      <div class="container team-list__container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
 
           <li class="team-list__item">
-            <img src="./img/img4.jpg" alt="Фото: Игорь Демьяненко" width="270" class="photo">
+            <img src="./img/img4.jpg" srcset="
+              ./img/img4_mob.jpg   320w,
+              ./img/img4_tab.jpg   768w,
+              ./img/img4.jpg 1200w,
+              ./img/img4x2.jpg 2400w
+              " sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" alt="Фото: Игорь Демьяненко"
+              class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Игорь Демьяненко</h3>
               <p class="team-list__content">Product Designer</p>
@@ -199,7 +205,13 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img5.jpg" alt="Фото: Ольга Репина" width="270" class="photo">
+            <img src="./img/img5.jpg" srcset="
+              ./img/img5_mob.jpg   320w,
+              ./img/img5_tab.jpg   768w,
+              ./img/img5.jpg 1200w,
+              ./img/img5x2.jpg 2400w
+              " sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" alt="Фото: Ольга Репина"
+              class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Ольга Репина</h3>
               <p class="team-list__content">Frontend Developer</p>
@@ -238,7 +250,13 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img6.jpg" alt="Фото: Николай Тарасов" width="270" class="photo">
+            <img src="./img/img6.jpg" srcset="
+              ./img/img6_mob.jpg   320w,
+              ./img/img6_tab.jpg   768w,
+              ./img/img6.jpg 1200w,
+              ./img/img6x2.jpg 2400w
+              " sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" alt="Фото: Николай Тарасов"
+              class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Николай Тарасов</h3>
               <p class="team-list__content">Marketing</p>
@@ -277,7 +295,13 @@
 
           </li>
           <li class="team-list__item">
-            <img src="./img/img7.jpg" alt="Фото: Михаил Ермаков" width="270" class="photo">
+            <img src="./img/img7.jpg" srcset="
+              ./img/img7_mob.jpg   320w,
+              ./img/img7_tab.jpg   768w,
+              ./img/img7.jpg 1200w,
+              ./img/img7x2.jpg 2400w
+              " sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" alt="Фото: Михаил Ермаков"
+              class="photo">
             <div class="team-item-name">
               <h3 class="team-list__name">Михаил Ермаков</h3>
               <p class="team-list__content">UI Designer</p>
@@ -321,7 +345,7 @@
 
     <!-- ! КЛИЕНТЫ  -->
     <section class="section">
-      <div class="container">
+      <div class="container clients-container">
         <h2 class="section-title">Постоянные клиенты</h2>
 
         <ul class="clients-list list">
