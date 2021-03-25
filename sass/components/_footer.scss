@@ -1,0 +1,153 @@
+.footer__content{
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+}
+
+.footer{
+  background-color: $bgc-hero-footer;
+  
+  text-align: center;
+
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }  
+
+  
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  &__adress{
+    flex-flow: column; 
+    font-style: normal;
+  }
+  
+  &__adress-wrap{
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 85px;
+    }  
+  }
+
+  &__adres {
+    display: block;
+    color: $bgc-main;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 8px;
+    font-style: normal;
+
+    @media screen and (min-width:1200px){
+      margin-bottom: 9px;
+    }
+  }  
+
+  &__title {
+    color: $txt-c-light;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+  }
+
+  &__subscribe-input {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $txt-c-address;
+
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px){
+      width: 450px;
+    }
+
+    @media screen and (min-width:1200px){
+      width: 358px;
+      margin-bottom: 0;
+    }
+  }
+  
+  &__subscribe-icon {
+    fill: currentColor;
+
+    width: 24px;
+    height: 24px;
+    right: 28px;
+
+    position: absolute;
+  }
+
+  @media screen and (min-width:1200px){
+    &__subscribe {
+      display: flex;
+      flex-flow: row;
+    }
+  }
+}
+
+.footer-adres{
+  &__link {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    color: $txt-c-address;
+  }
+
+  &__item:not(:last-child){
+    margin-bottom: 8px;
+    
+    @media screen and (min-width:1200px){
+      margin-bottom: 9px;
+    }
+  }
+
+}
+
+.footer-social{
+  margin-bottom: 60px;
+
+  @media screen and (min-width:1200px){
+    margin-bottom: 0px;
+  }
+}
+
+.footer-subscribe{
+  @media screen and (min-width:1200px){
+    margin-left: 93px;
+  }
+}
+

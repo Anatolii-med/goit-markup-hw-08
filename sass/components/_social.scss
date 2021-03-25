@@ -15,6 +15,18 @@
   align-items: center;
 
   border-radius: 50%;
+
+  @media screen and (min-width:1200px){
+    transition: background-color $transiton-time $cubic, color $transiton-time $cubic;
+  
+    &:hover,
+    &:focus {
+      background-color: $bgc-accent;
+      color: $bgc-main;
+  
+      transition: color $transiton-time $cubic, background-color $transiton-time $cubic;
+    }
+  }
 }
 
 .team-list__social {
@@ -29,7 +41,9 @@
 .footer-social {
   &__list {
     display: flex;
+    justify-content: center;
   }
+
 }
 
 .footer-social__link {
@@ -45,6 +59,17 @@
 
   border-radius: 50%;
 
+  @media screen and (min-width:1200px){
+    transition: background-color $transiton-time $cubic;
+  
+    &:hover,
+    &:focus {
+      background-color: $bgc-accent;
+  
+      transition: background-color $transiton-time $cubic;
+    }   
+  }
+  
 }
 
 .footer-social__item:not(:last-child) {
