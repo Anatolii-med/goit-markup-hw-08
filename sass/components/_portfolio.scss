@@ -92,7 +92,10 @@
   // }
 
   &__item{
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      // width: 354px;
       width: calc((100% / 2) - 30px); 
 
       margin-top: $card-set-gap;
