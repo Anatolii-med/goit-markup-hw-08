@@ -1,0 +1,127 @@
+@media (min-width: 768px) {
+  .mobile-menu__container {
+    display: none;
+  }
+}
+
+.mobile-menu__container{
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  background-color: $bgc-main;
+
+  padding: 48px 40px;
+
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+  
+  transform: translateX(100%);
+  transition: transform $transiton-time $cubic;
+}
+
+.mobile-menu__container.is-open {
+  transform: translateX(0);
+}
+
+.btn-menu{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+
+  top: 10px;
+  right: 10px;
+
+  fill: $txt-c-grey;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    fill: $txt-c-accent;
+  }
+}
+
+.mobile-menu__nav-link{
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  color: $txt-c-grey;
+}
+
+.mobile-menu__nav-link.current{
+  color: $txt-c-accent;
+}
+
+.mobile-menu__item:not(:last-child){
+  margin-bottom: 38px;
+}
+
+.mobile-menu__tel-link{
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+
+  color: $txt-c-accent;
+}
+
+.mobile-menu__item-phone{
+  margin-bottom: 32px;
+}
+
+.mobile-menu__mail-link{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+
+  color: $txt-c-grey-light;
+
+}
+
+.mobile-menu__item-mail{
+  margin-bottom: 64px;
+}
+
+.mobile-menu__social{
+  display: flex;
+}
+
+.mobile-menu__social-item:not(:last-child){
+  margin-right: 20px;
+}
+
+.mobile-menu__social-item{
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222px;
+  letter-spacing: 0.02em;
+
+  color: $txt-c-accent;
+}
+
+.mobile-menu__social-item:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  top: -11px;
+  right: -10px;
+  width: 1px;
+  height: 22px;
+
+  background-color: rgba(33, 33, 33, 0.2);
+}
