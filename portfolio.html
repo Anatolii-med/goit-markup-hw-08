@@ -91,15 +91,19 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
-                <img srcset="
-                  ./img/p1_354.jpg 354w,
-                  ./img/p1_370.jpg 370w,
-                  ./img/p1_450.jpg 450w,
-                  ./img/p1_708.jpg 708w,
-                  ./img/p1_740.jpg 740w,
-                  ./img/p1_900.jpg 900w
-                  " src="./img/p1_370.jpg" sizes="(min-width: 481px) 354px, (min-width: 769px) 370px 100vw"
-                  alt="Скриншот сайта" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p1_450.jpg 480w, 
+                    ./img/p1_900.jpg 960w" sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p1_354.jpg 384w, 
+                    ./img/p1_708.jpg 768w" sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p1_370.jpg 400w,
+                    ./img/p1_740.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p1_450.jpg" alt="Скриншот сайта" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -120,16 +124,19 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__thumb">
+                <picture>
 
-                <img src="./img/p2.jpg" srcset="
-                  ./img/p2_354.jpg 354w,
-                  ./img/p2_370.jpg 370w,
-                  ./img/p2_450.jpg 450w,
-                  ./img/p2_708.jpg 708w,
-                  ./img/p2_740.jpg 740w,
-                  ./img/p2_900.jpg 900w
-                  " sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" alt="Постер Basketball"
-                  class="photo">
+                  <source media="(max-width: 767px)" srcset="./img/p2_450.jpg 480w, 
+                                    ./img/p2_900.jpg 960w" sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p2_354.jpg 384w, 
+                                    ./img/p2_708.jpg 768w" sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p2_370.jpg 400w,
+                                    ./img/p2_740.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p2_450.jpg" alt="Постер Basketball" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -150,15 +157,19 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p3.jpg" srcset="
-                    ./img/p3_354.jpg 354w,
-                    ./img/p3_370.jpg 370w,
-                    ./img/p3_450.jpg 450w,
-                    ./img/p3_708.jpg 708w,
-                    ./img/p3_740.jpg 740w,
-                    ./img/p3_900.jpg 900w
-                  " sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, 100vw" alt="Restaurant Logo"
-                  class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p3_450.jpg 480w, 
+                                                    ./img/p3_900.jpg 960w" sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p3_354.jpg 384w, 
+                                                    ./img/p3_708.jpg 768w" sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p3_370.jpg 400w,
+                                                    ./img/p3_740.jpg 800w" sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p3_450.jpg" alt="Restaurant Logo" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -179,7 +190,22 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p4.jpg" alt="Наушники" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p4_450.jpg 480w, 
+                                                                    ./img/p4_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p4_354.jpg 384w, 
+                                                                    ./img/p4_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p4_370.jpg 400w,
+                                                                    ./img/p4_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p4_450.jpg" alt="Наушники" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -201,7 +227,22 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p5.jpg" alt="Коробки" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p5_450.jpg 480w, 
+                                                                    ./img/p5_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p5_354.jpg 384w, 
+                                                                    ./img/p5_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p5_370.jpg 400w,
+                                                                    ./img/p5_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p5_450.jpg" alt="Коробки" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -223,7 +264,22 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p6.jpg" alt="Скриншот сайта" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p6_450.jpg 480w, 
+                                                                    ./img/p6_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p6_354.jpg 384w, 
+                                                                    ./img/p6_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p6_370.jpg 400w,
+                                                                    ./img/p6_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p6_450.jpg" alt="Скриншот сайта" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -245,7 +301,22 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p7.jpg" alt="Книга" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p7_450.jpg 480w, 
+                                                                    ./img/p7_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p7_354.jpg 384w, 
+                                                                    ./img/p7_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p7_370.jpg 400w,
+                                                                    ./img/p7_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p7_450.jpg" alt="Книга" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -267,7 +338,22 @@
             <a href="#" class="projects__link">
               <div class="projects__thumb">
 
-                <img src="./img/p8.jpg" alt="Label" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p8_450.jpg 480w, 
+                                                                    ./img/p8_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p8_354.jpg 384w, 
+                                                                    ./img/p8_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p8_370.jpg 400w,
+                                                                    ./img/p8_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p8_450.jpg" alt="Label" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
@@ -289,7 +375,22 @@
             <a href="#" class="projects__link">
 
               <div class="projects__thumb">
-                <img src="./img/p9.jpg" alt="Laptop" width="370" class="photo">
+                <picture>
+
+                  <source media="(max-width: 767px)" srcset="./img/p9_450.jpg 480w, 
+                                                                    ./img/p9_900.jpg 960w"
+                    sizes="(min-width: 320px) 100vw">
+
+                  <source media="(max-width: 1199px)" srcset="./img/p9_354.jpg 384w, 
+                                                                    ./img/p9_708.jpg 768w"
+                    sizes="(min-width: 768px) 50vw">
+
+                  <source media="(min-width: 1200px)" srcset="./img/p9_370.jpg 400w,
+                                                                    ./img/p9_740.jpg 800w"
+                    sizes="(min-width: 1200px) 33vw">
+
+                  <img src="./img/p9_450.jpg" alt="Laptop" class="photo">
+                </picture>
                 <div class="projects-overlay">
                   <p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса.
                     Компании
