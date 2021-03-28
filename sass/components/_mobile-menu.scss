@@ -55,11 +55,16 @@
 .mobile-menu__nav-link{
   display: block;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1.175;
   letter-spacing: 0.02em;
 
   color: $txt-c-grey;
+
+  @media screen and (min-width: 400px) {
+    font-size: 40px;
+
+  }
 }
 
 .mobile-menu__nav-link.current{
@@ -72,11 +77,16 @@
 
 .mobile-menu__tel-link{
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.176;
   letter-spacing: 0.02em;
 
   color: $txt-c-accent;
+
+  @media screen and (min-width: 400px) {
+    font-size: 34px;
+
+  }
 }
 
 .mobile-menu__item-phone{
@@ -85,11 +95,17 @@
 
 .mobile-menu__mail-link{
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.02em;
 
   color: $txt-c-grey-light;
+
+  @media screen and (min-width: 400px) {
+    font-size: 24px;
+
+  }
+
 
 }
 
@@ -108,11 +124,16 @@
 .mobile-menu__social-item{
   position: relative;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.222px;
   letter-spacing: 0.02em;
 
   color: $txt-c-accent;
+
+  @media screen and (min-width: 400px) {
+    font-size: 18px;
+
+  }
 }
 
 .mobile-menu__social-item:not(:last-child)::after{

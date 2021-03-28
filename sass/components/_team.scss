@@ -1,20 +1,22 @@
 .team-section{
-  padding-bottom: 0;
   background-color: $bgc-dark;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .team-list__container {
   min-width: 320px;
   max-width: 480px;
 
-  padding-bottom: 60px;
+
   
   @media screen and (min-width: 768px) {
     max-width: 768px;  
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
     max-width: 1200px;
   }
 
